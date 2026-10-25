@@ -21,4 +21,6 @@ dist-ssr
 *.ntvs*
 *.njsproj
 *.sln
-*.sw?
+# Raw source photos (optimized copies live in src/assets/photos/)
+/images
+
