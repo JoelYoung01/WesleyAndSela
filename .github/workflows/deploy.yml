@@ -40,7 +40,8 @@ jobs:
       - name: Build
         run: pnpm build
         env:
-          BASE_PATH: ${{ steps.pages.outputs.base_path }}
+          # Custom domain serves from the site root.
+          BASE_PATH: /
 
       # GitHub Pages has no SPA fallback; serve the app for unknown paths.
       - name: SPA fallback
