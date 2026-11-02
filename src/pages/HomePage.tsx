@@ -7,7 +7,7 @@ import { site } from '@/content/site'
 export function HomePage() {
   return (
     <div className="flex flex-col items-center">
-      <section className="relative flex min-h-[calc(100svh-3.5rem)] w-full items-end justify-center overflow-hidden px-4 py-14 text-center md:items-center md:py-24">
+      <section className="relative flex min-h-[calc(100svh-3.5rem)] w-full items-center justify-center overflow-hidden px-4 py-14 text-center md:py-24">
         <img
           src={site.images.hero.src}
           alt={site.images.hero.alt}
