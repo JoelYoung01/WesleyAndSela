@@ -11,8 +11,9 @@ export function TravelPage() {
           Travel &amp; stay
         </h1>
         <p className="text-muted-foreground">
-          Fly into Charlotte. Waxhaw is a south-of-the-city kind of situation.
-          Hotel block and whether you actually need a rental car: coming.
+          Fly into Charlotte. Mount Pleasant is a north-and-east-of-the-city
+          kind of situation. Hotel block and whether you actually need a rental
+          car: coming.
         </p>
       </header>
 

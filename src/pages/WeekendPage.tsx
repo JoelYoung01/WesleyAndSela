@@ -1,4 +1,5 @@
 import { ComingSoon } from '@/components/ComingSoon'
+import { VenueBlock } from '@/components/VenueBlock'
 import { site } from '@/content/site'
 
 export function WeekendPage() {
@@ -11,13 +12,13 @@ export function WeekendPage() {
         </h1>
         <p className="text-muted-foreground">
           Most of you are coming in from out of state, so this will be more than
-          a Saturday afternoon. Exact times land once the date and venue do.
-          Ceremony is outdoors. Shoes should survive grass.
+          one afternoon. Exact times are still landing. Ceremony is outdoors.
+          Shoes should survive grass.
         </p>
       </header>
 
-      <ComingSoon title="Saturday schedule" item={site.schedule} />
-      <ComingSoon title="Venue" item={site.venue} />
+      <ComingSoon title="Wedding day schedule" item={site.schedule} />
+      <VenueBlock />
       <ComingSoon title="Parking" item={site.parking} />
       <ComingSoon title="The rest of the weekend" item={site.itinerary} />
     </div>

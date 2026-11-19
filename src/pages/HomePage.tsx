@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { ComingSoon } from '@/components/ComingSoon'
 import { Countdown } from '@/components/Countdown'
+import { VenueBlock } from '@/components/VenueBlock'
 import { Button } from '@/components/ui/button'
 import { site } from '@/content/site'
 
@@ -28,9 +29,9 @@ export function HomePage() {
           </h1>
           <Countdown className="text-[#f8ebe2]/90" />
           <p className="max-w-lg text-base text-[#f8ebe2]/90 md:text-lg">
-            We are getting married in the woods-adjacent corner of North
-            Carolina, and we would like you there. Details will fill in as we
-            pin them down.
+            We are getting married at Carolina Country Weddings in Mount
+            Pleasant, and we would like you there. More logistics will fill in
+            as we pin them down.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-3 pt-3">
             <Button
@@ -102,7 +103,7 @@ export function HomePage() {
         </section>
 
         <section className="grid w-full max-w-4xl gap-4 text-left md:grid-cols-2">
-          <ComingSoon title="The venue" item={site.venue} />
+          <VenueBlock title="The venue" />
           <ComingSoon title="Photos" item={site.photos} />
         </section>
       </div>

@@ -22,14 +22,14 @@ export const site = {
     second: 'Sela',
   },
   location: {
-    city: 'Waxhaw',
+    city: 'Mount Pleasant',
     region: 'North Carolina',
-    display: 'Waxhaw, North Carolina',
+    display: 'Mount Pleasant, North Carolina',
   },
   date: {
-    display: 'Early June 2027',
-    confirmed: false,
-    iso: null as string | null,
+    display: 'June 6, 2027',
+    confirmed: true,
+    iso: '2027-06-06' as string | null,
   },
   email: 'selaandwesleyswedding@gmail.com',
   photographer: {
@@ -65,16 +65,30 @@ export const site = {
     deadline: null as string | null,
   },
   venue: {
-    status: 'tbd',
-    note: 'Waxhaw venue still being chosen.',
-  } satisfies Tbd,
+    status: 'ready',
+    value: {
+      name: 'Carolina Country Weddings',
+      street: '3721 Little Buffalo Creek Road',
+      city: 'Mount Pleasant',
+      region: 'NC',
+      postalCode: '28124',
+      mapUrl: 'https://maps.app.goo.gl/ucLqbGpKpPqePDjcA',
+    },
+  } satisfies Ready<{
+    name: string
+    street: string
+    city: string
+    region: string
+    postalCode: string
+    mapUrl: string
+  }>,
   parking: {
     status: 'tbd',
-    note: 'Parking and rideshare pin once we have a venue.',
+    note: 'Parking and rideshare tips for the venue coming.',
   } satisfies Tbd,
   schedule: {
     status: 'tbd',
-    note: 'Ceremony, cocktail hour, and reception times once the date is locked.',
+    note: 'Ceremony, cocktail hour, and reception times coming.',
   } satisfies Tbd,
   itinerary: {
     status: 'tbd',
@@ -100,7 +114,7 @@ export const site = {
   faq: [
     {
       q: 'What should we wear?',
-      a: 'Summer semi-formal. The ceremony is outdoors on grass, and early June in North Carolina will be hot — dress like you might actually be outside. Bug spray is not a bad idea.',
+      a: 'Summer semi-formal. The ceremony is outdoors on grass, and June in North Carolina will be hot — dress like you might actually be outside. Bug spray is not a bad idea.',
     },
     {
       q: 'Can we take photos during the ceremony?',
