@@ -13,7 +13,7 @@ export function HomePage() {
           src={site.images.hero.src}
           alt={site.images.hero.alt}
           fetchPriority="high"
-          className="absolute inset-0 h-full w-full object-cover object-[40%_top]"
+          className="absolute inset-0 h-full w-full object-cover object-[34%_top]"
         />
         <div
           aria-hidden="true"
