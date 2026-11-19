@@ -8,12 +8,12 @@ import { site } from '@/content/site'
 export function HomePage() {
   return (
     <div className="flex flex-col items-center">
-      <section className="relative flex min-h-[calc(100svh-3.5rem)] w-full items-center justify-center overflow-hidden px-4 py-14 text-center md:py-24">
+      <section className="relative flex min-h-[58svh] w-full items-center justify-center overflow-hidden px-4 py-14 text-center md:min-h-[calc(100svh-3.5rem)] md:py-24">
         <img
           src={site.images.hero.src}
           alt={site.images.hero.alt}
           fetchPriority="high"
-          className="absolute inset-0 h-full w-full object-cover object-[center_35%]"
+          className="absolute inset-0 h-full w-full object-cover object-[40%_top]"
         />
         <div
           aria-hidden="true"
